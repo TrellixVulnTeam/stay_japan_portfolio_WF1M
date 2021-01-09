@@ -29,7 +29,8 @@
             <nav class="header__nav">
               <ul class="header__ul">
                 <li class="header__li item"><a href="#service">Service</a></li>
-                <li class="header__li item"><a href="#accommodation">Accommodation</a></li>
+                <li class="header__li item"><a href="#houses">Find House</a></li>
+                <li class="header__li item"><a href="#popular">Popular Place</a></li>
                 <li class="header__li item">
                   <a class="btn filled" href="#contact">Contact</a>
                 </li>
@@ -48,7 +49,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="hero__title">Enjoy Rich</div>
-                  <img src="images/image_ja_2.jpg" alt="" />
+                  <img src="images/image_ja_spa2.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
                   <div class="hero__title">Fantastic</div>
@@ -103,7 +104,7 @@
                 </div>
               </section>
 
-              <section id="accommodation" class="houses">
+              <section id="houses" class="houses">
                 <div>
                   <h2 class="main-title tween-animate-title">Find Your House</h2>
                   <p class="sub-title tween-animate-title">お気に入りの宿泊先を見つけましょう</p>
@@ -169,7 +170,7 @@
                 </div>
               </section>
 
-              <section class="popular">
+              <section id="popular" class="popular">
                 <div class="popular__header">
                   <h2 class="main-title tween-animate-title">Popular Place</h2>
                   <p class="sub-title tween-animate-title">人気の観光地で宿泊先を見つけましょう</p>
@@ -216,31 +217,28 @@
                 <span class="tween-animate-title">&copy;Satoru Osada</span>
               </div>
             </aside>
-          </div>
-
-          <section id="contact" class="contact">
-            <h2 class="main-title tween-animate-title">CONTACT</h2>
-            <form>
-                <div class="form-group">
-                    <label>名前：＊必須<span class="help-block"></span>
-                        <input type="text" name="name" class="valid-text">
-                    </label>
+            <section id="contact" class="contact">
+              <h2 class="main-title tween-animate-title">CONTACT</h2>
+              <form>
+                  <div class="form-group">
+                      <label>名前：＊必須<span class="help-block"></span>
+                          <input type="text" name="name" class="valid-text">
+                      </label>
+                  </div>
+                  <div class="form-group">
+                    <label>E-MAIL：＊必須<span class="help-block"></span>
+                      <input type="text" name="emial" class="valid-email">
+                  </label>
                 </div>
-                <div class="form-group">
-                  <label>E-MAIL：＊必須<span class="help-block"></span>
-                    <input type="text" name="emial" class="valid-email">
-                </label>
-              </div>
-                <div class="form-group">
-                    <label>内容：＊必須<span class="help-block"></span>
-                        <textarea cols="100" rows="10" name="comment" class="valid-textarea"></textarea>
-                    </label>
-                </div>
-                <input type="submit" name="submit" value="送信">
-            </form>
-        </section>
-          
-
+                  <div class="form-group">
+                      <label>内容：＊必須<span class="help-block"></span>
+                          <textarea cols="100" rows="10" name="comment" class="valid-textarea"></textarea>
+                      </label>
+                  </div>
+                  <input type="submit" name="submit" value="送信">
+              </form>
+            </section>
+          </div>         
         </div>
         <footer class="footer appear up">
           <div class="logo item">
@@ -251,9 +249,9 @@
           <nav class="footer__nav">
             <ul class="footer__ul">
               <li class="footer__li item"><a href="#service">Service</a></li>
-              <li class="footer__li item"><a href="#accommodation">Accommodation</a></li>
+              <li class="footer__li item"><a href="#houses">Find House</a></li>
+              <li class="footer__li item"><a href="#popular">Popular Place</a></li>
               <li class="footer__li item"><a href="#contact">Contact</a></li>
-              <li class="footer__li item"><a href="#">Sitemap</a></li>
             </ul>
             <div class="footer__copyright item">
               &copy; Satoru Osada
@@ -275,13 +273,19 @@
             </a>
           </li>
           <li class="mobile-menu__item">
-            <a class="mobile-menu__link js-btn2" href="#accommodation">
-              <span class="main-title">Accommodation</span>
-              <span class="sub-title">宿泊先</span>
+            <a class="mobile-menu__link js-btn2" href="#houses">
+              <span class="main-title">Find House</span>
+              <span class="sub-title">お気に入りの宿泊先を探す</span>
             </a>
           </li>
           <li class="mobile-menu__item">
-            <a class="mobile-menu__link js-btn3" href="#contact">
+            <a class="mobile-menu__link js-btn3" href="#popular">
+              <span class="main-title">Popular place</span>
+              <span class="sub-title">人気観光地から宿泊先を探す</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link js-btn4" href="#contact">
               <span class="main-title">Contact Us</span>
               <span class="sub-title">コンタクト方法</span>
             </a>
