@@ -28,14 +28,14 @@ class TweenTextAnimation extends TextAnimation {
   animate() {
     this.DOM.el.classList.add('inview');
     this.DOM.chars.forEach((c, i) => {
-      TweenMax.to(c, .9, {
+      TweenMax.to(c, .6, {
         ease: Back.easeOut,
         delay: i * .05,
         startAt: {
           y: '-50%',
           opacity: 0
         },
-        y: '10%',
+        y: '0%',
         opacity: 1
       });
     });

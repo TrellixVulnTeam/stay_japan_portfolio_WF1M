@@ -21,7 +21,7 @@ function icon(done){//画像圧縮のみ　
 }
 
 function styles() {
-    return src('./src/styles/**.scss')
+    return src('./src/styles/**')
     .pipe($.if(!isProd, $.sourcemaps.init()))
         .pipe($.sass())
         .pipe($.postcss([

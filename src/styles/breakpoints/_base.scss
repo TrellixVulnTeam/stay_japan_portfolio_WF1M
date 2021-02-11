@@ -26,19 +26,13 @@ img {
   margin-bottom: 16px !important;
 }
 .mb-lg {
-  margin-bottom: 80px !important;
+  margin-bottom: -55px !important;
 }
-.pt-sm{
-  padding-top: 20px;
-}
-.pt-md {
-  padding-top: 80px !important;
-}
-.pt-lg{
+.pt-lg {
   padding-top: 170px;
 }
 .pb-sm {
-  padding-bottom: 16px !important;
+  padding-bottom: 16px;
 }
 .pb-lg {
   padding-bottom: 80px !important;
@@ -81,6 +75,10 @@ main {
   position: relative;
   z-index: 10;
   transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.hero {
+  margin-bottom: -130px;
 }
 
 .header {
@@ -136,6 +134,7 @@ main {
 
 .travel {
   @extend .content-width;
+  @extend .mb-lg;
   @extend .pt-lg;
 
   &__inner {
@@ -163,7 +162,7 @@ main {
       transform-origin: right;
     }
 
-
+    
   }
 
   &__sub {
@@ -201,11 +200,13 @@ main {
 
 .houses {
   @extend .content-width;
+  @extend .mb-lg;
   @extend .pt-lg;
 
   &__inner {
     @extend .flex;
   }
+
   &__title {
     @extend .font-lr;
     @extend .mb-sm;
@@ -219,6 +220,7 @@ main {
 
 .popular {
   @extend .pt-lg;
+
   &__inner {
     position: relative;
     @include p-base($top: 10%, $height: 90%) {
@@ -242,7 +244,7 @@ main {
     z-index: 2;
     @extend .flex;
     @extend .content-width;
-    @extend .pb-sm;
+    @extend .pb-lg;
   }
 
   &__title {
@@ -257,7 +259,7 @@ main {
   }
 
   &__img {
-    height: 300px;
+    height: 150px;
     overflow: hidden;
     margin-bottom: 5px;
 
@@ -277,6 +279,10 @@ main {
     width: 0.7em;
   }
 
+  &__stay {
+    color: $cBlack;
+  }
+
   &__world {
     color: $cWineRed;
   }
@@ -285,10 +291,6 @@ main {
 .footer {
   padding: 60px 0;
   @extend .content-width;
-
-  & a{
-    text-decoration: none;
-  }
 
   &__nav {
     @extend .flex;
@@ -316,10 +318,6 @@ main {
   & .logo {
     font-size: 38px;
     justify-content: center;
-
-    &__stay {
-      color: $cBlack;
-    }
   }
 }
 
@@ -385,7 +383,6 @@ main {
     }
   }
 }
-
 .contact {
   @extend .content-width;
   @extend .pt-lg;

@@ -811,22 +811,16 @@ img {
 .mb-sm, .travel__sub, .travel__img, .houses__title, .popular__title {
   margin-bottom: 16px !important; }
 
-.mb-lg, .popular__btn {
-  margin-bottom: 80px !important; }
-
-.pt-sm {
-  padding-top: 20px; }
-
-.pt-md {
-  padding-top: 80px !important; }
+.mb-lg, .travel, .houses, .popular__btn {
+  margin-bottom: -55px !important; }
 
 .pt-lg, .travel, .houses, .popular, .contact {
   padding-top: 170px; }
 
-.pb-sm, .travel__texts, .popular__container {
-  padding-bottom: 16px !important; }
+.pb-sm, .travel__texts {
+  padding-bottom: 16px; }
 
-.pb-lg {
+.pb-lg, .hero, .popular__container {
   padding-bottom: 80px !important; }
 
 .content-width, .header__inner, .travel, .houses, .popular__header, .popular__container, .footer, .contact {
@@ -873,6 +867,9 @@ main {
   -o-transition: transform 0.5s, box-shadow 0.5s;
   transition: transform 0.5s, box-shadow 0.5s;
   transition: transform 0.5s, box-shadow 0.5s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s; }
+
+.hero {
+  margin-bottom: -130px; }
 
 .header {
   position: fixed;
@@ -1019,7 +1016,7 @@ main {
           flex-basis: 100%; }
 
 .popular__img {
-  height: 300px;
+  height: 150px;
   overflow: hidden;
   margin-bottom: 5px; }
   .popular__img > img {
@@ -1036,13 +1033,13 @@ main {
   display: flex; }
   .logo__img {
     width: 0.7em; }
+  .logo__stay {
+    color: black; }
   .logo__world {
     color: #904669; }
 
 .footer {
   padding: 60px 0; }
-  .footer a {
-    text-decoration: none; }
   .footer__nav {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -1068,8 +1065,6 @@ main {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .footer .logo__stay {
-      color: black; }
 
 .side {
   display: none;
@@ -1215,8 +1210,6 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-  .hero__title {
-    font-size: 35px; }
   .houses__item {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
@@ -1226,7 +1219,8 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    padding-bottom: 100px !important; }
   .popular__item {
     -webkit-flex-basis: 47%;
         -ms-flex-preferred-size: 47%;
@@ -1253,38 +1247,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
             justify-content: flex-start; }
   .footer__li {
     margin-left: 0;
-    margin-right: 30px; }
-  /*フォーム*/
-  form {
-    width: 80%;
-    margin: 0 auto; }
-  label {
-    display: block; }
-  input, textarea {
-    font-size: 18px;
-    margin-bottom: 15px; }
-  input[type="text"] {
-    width: 100%;
-    height: 60px;
-    border: none;
-    background: #f6f5f5;
-    padding: 10px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-  textarea {
-    width: 100%;
-    height: 400px;
-    border: none;
-    background: #f6f5f5;
-    padding: 10px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-  input[type="submit"] {
-    background: #333;
-    border: none;
-    padding: 15px 30px;
-    color: white;
-    float: right; } }
+    margin-right: 30px; } }
 
 @media (min-width: 960px) {
   /******************************************************************
@@ -1300,28 +1263,24 @@ Stylesheet: 960px以上のモニタで適用
     font-size: 23px; }
   .font-lg, .main-title {
     font-size: 36px; }
-  .mb-lg, .popular__btn {
-    margin-bottom: 150px !important; }
-  .pt-sm {
-    padding-top: 40px; }
-  .pt-md {
+  .mb-lg, .travel, .houses, .popular__btn {
+    margin-bottom: 10px !important; }
+  .pt-lg, .travel, .houses, .popular, .contact {
     padding-top: 100px !important; }
-  .pb-lg {
-    padding-bottom: 150px !important; }
+  .pb-lg, .hero, .popular__container {
+    padding-bottom: 190px !important; }
   .popular__item {
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%; }
   .popular__img {
     height: 335px; }
-  .travel {
-    padding-top: 150px; }
-    .travel__img {
-      height: 400px; }
-    .travel__description {
-      margin-bottom: 40px; }
-    .travel__title::before {
-      display: block; }
+  .travel__img {
+    height: 400px; }
+  .travel__description {
+    margin-bottom: 40px; }
+  .travel__title::before {
+    display: block; }
   .footer__li {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -1333,38 +1292,7 @@ Stylesheet: 960px以上のモニタで適用
     display: none; }
   .swiper-slide {
     -webkit-box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
-            box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8); }
-  /*フォーム*/
-  form {
-    width: 60%;
-    margin: 0 auto; }
-  label {
-    display: block; }
-  input, textarea {
-    font-size: 18px;
-    margin-bottom: 15px; }
-  input[type="text"] {
-    width: 100%;
-    height: 60px;
-    border: none;
-    background: #f6f5f5;
-    padding: 10px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-  textarea {
-    width: 100%;
-    height: 400px;
-    border: none;
-    background: #f6f5f5;
-    padding: 10px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-  input[type="submit"] {
-    background: #333;
-    border: none;
-    padding: 15px 30px;
-    color: white;
-    float: right; } }
+            box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8); } }
 
 @media (min-width: 1280px) {
   /******************************************************************
